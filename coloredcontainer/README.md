@@ -11,29 +11,40 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages).
 -->
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+TODO: 
+<h1 >Hi flutter developers 👋</h1>
+<h3 >A ColoredContainer is a rectangular box that can be decorated with various visual properties, such as an inbuilt background color, rectangular shape with rounded edges, and more. ColoredContainers are used for a variety of purposes in Flutter</h3>
+<img align="left" alt="Coding" width="400" src="https://drive.google.com/file/d/1PPttkjH3BS6qnj6WFo4SJxOUEawZo9LC/view?usp=share_link"/>
+
 
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+ColoredContainers can be used to apply visual styles to widgets, such as a background color, a border, or a shadow. This can help to create a consistent and attractive user interface. Also user have the freedom to adjust the height and width of this package.
 
 ## Getting started
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+Using ColoredContainer package is very simple just like using a container.
 
-## Usage
-
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
 
 ```dart
-const like = 'sample';
+class HomePage extends StatelessWidget {
+  const HomePage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Colors.grey.shade900,
+      body: const Center(
+        child: ColoredContainer(
+          child: Text(
+            'sample package text',
+            style: TextStyle(fontSize: 30),
+          ),
+        ),
+      ),
+    );
+  }
+}
 ```
 
-## Additional information
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
